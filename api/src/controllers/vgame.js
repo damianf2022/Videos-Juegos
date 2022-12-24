@@ -28,6 +28,15 @@ const infoApi = async () => {
     return games
 }
 
+const infoplatform = async () => {
+    const plat = []
+    let url = await axios.get('https://api.rawg.io/api/platforms?key=605161345d27485cb7c396920d43a541')
+    let platform = url.data.results.map(e => {
+        return { platforms:e.name }
+    })
+    return platform
+}
+
 const infoDb = async () => {
     const findAllDb = await Videogame.findAll({
         include: {
@@ -86,6 +95,7 @@ const infoById = async (id) => {
     }
 }
 module.exports = {
+    infoplatform,
     infoApi,
     infoDb,
     infoAll,

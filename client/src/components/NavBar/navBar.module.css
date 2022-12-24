@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Open+Sans:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Open+Sans:wght@300;400;700;800&family=Rubik+Marker+Hatch&display=swap');
+
+.navBar {
+    width: 97%;
+    margin: auto;
+    padding: 115px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(114, 25, 86, 0.5)),
+  url(../imagenes/tumblr_812cf4dd53d093100d7aef0a74774640_bc4f9386_400.gif); 
+}
+
+.navBar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-family: 'DynaPuff', cursive;
+    color: black;
+    font-size: 1.5rem;
+
+}
+
+.navBar ul li a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    /* font-family: 'DynaPuff', cursive; */
+    /* font-size: 1.2rem; */
+    /* margin-left: 100px; */
+}
+
+.navBar ul li:hover {
+    cursor: pointer;
+    transform: scale(1.0);
+}
+
+
+.navBar h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-size: 2rem;
+    margin-left: 30px;
+    display: flex;
+}
+
+/* .button { */
+    /* background-color: fuchsia; */
+/* } */

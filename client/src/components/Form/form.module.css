@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: #550565;
+    background: rebeccapurple;
+    padding: 2%;
+}
+
+.container h1 {
+    color: rgb(0, 0, 0);
+    font-family: 'Rubik Marker Hatch', cursive;
+    font-size: 3rem;
+    text-align: center;
+    padding: 2%;
+    text-decoration: none;
+    outline: none;
+}
+
+.container h1:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.cards {
+    margin: auto;
+    width: 400px;
+    height: 100%;
+    padding: 5px;
+    border: 2px solid rgba(4, 4, 4, 0.92);
+    justify-content: center;
+    background-color: rebeccapurple;
+    align-items: center;
+    line-height: 0%;
+    border-radius: 5px;
+}
+
+.cards .delete button {
+    cursor: pointer;
+    border: 3px solid rgb(167, 166, 166);
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    height: 35px;
+    width: 35px;
+    background-color: rgb(255, 0, 0);
+    font-family: 'DynaPuff', cursive;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.cards .genres option {
+    width: 100px;
+    border: none;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'DynaPuff', cursive;
+    border-radius: 0.5em;
+    background: #d7d7d789;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.cards .platforms option {
+    width: 100px;
+    border: none;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    margin: 10px;
+    font-size: 16px;
+    font-family: 'DynaPuff', cursive;
+    border-radius: 0.5em;
+    background: #d7d7d789;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards button {
+    cursor: pointer;
+    border: 3px solid rgb(167, 166, 166);
+    border-radius: 15px;
+    color: rgb(34, 34, 34);
+    height: 60px;
+    width: 100px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'DynaPuff', cursive;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    margin-inline: 5%;
+}
+
+.cards button:hover {
+    cursor: pointer;
+    transform: scale(1.40);
+}
+
+.cards label {
+    color: rgba(0, 0, 0, 0.943);
+    font-family: 'DynaPuff', cursive;
+    font-size: 18px;
+    text-align: center;
+    list-style: none;
+    display: grid;
+    padding: 7%;
+}
+
+/* .cards h5 {
+    color: rgba(0, 0, 0, 0.943);
+    font-family: 'DynaPuff', cursive;
+    font-size: 18px;
+    text-align: center;
+    list-style: none;
+} */
+
+.cards input {
+    width: 210px;
+    border: none;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background: #d7d7d789;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.cards input:hover {
+    border: 1px solid white;
+}
+
+.cards select {
+    width: 250px;
+    border: none;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background: #d7d7d789;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.cards .description input {
+    text-align: justify;
+    width: 100%;
+    height: 100%;
+}
+
+.title h1 {
+    list-style: none;
+    font-family: 'DynaPuff', cursive;
+    color: rgb(0, 0, 0);
+    font-size: 3rem;
+    padding: 1%;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+}
+
+.title h1:hover {
+    cursor: pointer;
+    transform: scale(1.20);
+} 

@@ -1,0 +1,80 @@
+
+  /* background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+  url(../imagenes/tumblr_812cf4dd53d093100d7aef0a74774640_bc4f9386_400.gif); */
+  /* } */
+
+  /* background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)),
+                  url("../../media/examples/lizard.png"); */             
+  .cards {
+    display: grid;
+    align-items: center;
+    grid-gap: 20px;
+    padding: px 0;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    /* margin-inline: 70px;  */
+    /* margin-top: -20px; */
+  }
+
+  .grid {
+    width: 1000px;
+    height: 330px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    border: 200px solid rgba(44, 44, 44, 0.769);
+    text-decoration: none;
+  }
+
+  .contenedor {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* background-color: greenyellow; */
+  }
+
+  .contenedor select {
+    width: 250px;
+    border: none;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background: #d7d7d789;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  .contenedor select:hover {
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1), 0 0 30px rgba(255, 255, 255, 1), 0 0 40px #00ffff, 0 0 70px #00ffff, 0 0 80px #00ffff, 0 0 100px #00ffff;
+
+
+  }
+
+  .contenedor button {
+    margin-right: 15px;
+    margin-top: 13px;
+    border-radius: 50px;
+    cursor: pointer;
+    border: 3px solid rgb(167, 166, 166);
+    color: rgb(34, 34, 34);
+    height: 40px;
+    width: 40px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'DynaPuff', cursive;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contenedor button:hover {
+    cursor: pointer;
+    transform: scale(1.40);
+  }

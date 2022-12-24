@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Open+Sans:wght@300;400;700;800&display=swap');
+
+.SearchBar {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+  }
+  
+.SearchBar input {
+    width: 210px;
+    border: none;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    margin: 10px;
+    font-size: 16px;
+    border-radius: 0.5em;
+    background: #d7d7d789;
+    border: 1px solid #e8e8e8;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+  
+.SearchBar input:hover {
+    border: 5px solid white;
+}
+  
+.SearchBar button {
+    height: 50px;
+    width: 10px;
+    padding: 0.7em 1.7em;
+    margin: 10px;
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    border: 3px solid #848484;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-size: 20px;
+    font-family: 'DynaPuff', cursive;
+}
+  
+.SearchBar button:hover {
+    cursor: pointer;
+    transform: scale(1.40);
+  }

@@ -1,6 +1,7 @@
 const { Router } = require('express')
-const { infoAll, infoById } = require('../controllers/vgame')
+const { infoAll, infoById,infoplatform} = require('../controllers/vgame')
 const { Videogame, Genres } = require('../db')
+// const platforms = require('../models/platforms')
 const router = Router()
 
 router.get('/', async (req, res, next) => {
@@ -31,6 +32,15 @@ router.get('/', async (req, res, next) => {
     }
 })
 
+router.get('/platforms', async (req, res, next) => {
+    let juegos = await infoplatform()
+    // // let arrjuegos = juegos.map(e => {
+    // //     return { platforms: e.platforms }
+    // })
+    res.send(juegos)
+
+})
+
 router.get('/:id', async (req, res, next) => {
     const { id } = req.params
     try {
@@ -42,7 +52,7 @@ router.get('/:id', async (req, res, next) => {
 })
 
 router.post('/', async (req, res, next) => {
-    const { name, description, released, rating, genres, platform } = req.body
+    const { name, description, released, rating, genres, platforms, image } = req.body
 
     try {
         let newGame = await Videogame.create({
@@ -50,7 +60,8 @@ router.post('/', async (req, res, next) => {
             description,
             released,
             rating,
-            platform
+            platforms,
+            image
         })
 
         const addGenres = await Genres.findAll({
@@ -60,7 +71,7 @@ router.post('/', async (req, res, next) => {
         })
         newGame.addGenre(addGenres)
         res.send(newGame)
-        console.log(newGame)
+        // console.log(newGame)
 
     } catch (error) {
         next(error)
@@ -69,7 +80,7 @@ router.post('/', async (req, res, next) => {
 
 router.put('/:id', async (req, res, next) => {
     const { id } = req.params
-    const { name, description, rating, released, platform } = req.body
+    const { name, description, rating, released, platforms } = req.body
     try {
         let updateVideo = await Videogame.findOne({
             where: {
@@ -88,7 +99,7 @@ router.put('/:id', async (req, res, next) => {
             description,
             rating,
             released,
-            platform
+            platforms
         });
         let genDb = await Genres.findAll({
             where: {

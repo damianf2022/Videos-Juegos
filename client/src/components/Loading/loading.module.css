@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&family=Open+Sans:wght@300;400;700;800&family=Rubik+Marker+Hatch&display=swap');
+
+.loading {
+  height: 500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* margin-top: 500px;
+  margin-left: 500px; */
+
+}
+
+/* .loading img {
+  height: 200px;
+  width: 200x;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin-top: 70px;
+  margin-left: 450px;
+} */
+
+.loading h1 {
+  font-family: 'Rubik Marker Hatch', cursive;
+  font-size: 2rem;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 290px;
+  margin-left: -350px;
+  color: rgb(0, 0, 0);
+} 
