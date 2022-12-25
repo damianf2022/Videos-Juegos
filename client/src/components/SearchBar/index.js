@@ -7,7 +7,7 @@ import styles from './searchBar.module.css'
 export default function SearchBar({setpaginaActual}) {
 
     const dispatch = useDispatch();
-    const [name, setName] = useState('');
+    const [name, setName] = useState("");
 
     function handleInputChange(e) {
         e.preventDefault()
@@ -21,13 +21,21 @@ export default function SearchBar({setpaginaActual}) {
         setName('')
         setpaginaActual(1)
     }
+    function handleKeyDown(e) {
+        if (e.key === "Enter") {
+          handleSubmit(e);
+        }
+      };
 
     return (
         <div className={styles.SearchBar}>
             <input
+                value={name}
                 type="text"
                 placeholder="Busca un Juego"
                 onChange={(e) => handleInputChange(e)}
+                onKeyDown={(e) => handleKeyDown(e)}
+
             />
             <button type="submit" onClick={(e) => handleSubmit(e)}>🔍︎</button>
         </div>

@@ -25,6 +25,7 @@ const initialState = {
   createVideo: [],
   platform: [],
   detalle: {},
+  searchName:[]
 }
 
 
@@ -56,7 +57,7 @@ function reducer(state = initialState, action) {
     case GET_NAME:
       return {
         ...state,
-        videogames: action.payload
+        searchName: action.payload
       }
 
     case FILTRO_GENRES:

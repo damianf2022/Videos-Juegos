@@ -1,7 +1,6 @@
 const { Router } = require('express')
-const { infoAll, infoById,infoplatform} = require('../controllers/vgame')
+const { infoAll, infoById, infoplatform } = require('../controllers/vgame')
 const { Videogame, Genres } = require('../db')
-// const platforms = require('../models/platforms')
 const router = Router()
 
 router.get('/', async (req, res, next) => {
@@ -9,8 +8,8 @@ router.get('/', async (req, res, next) => {
         const { name } = req.query
         let juegos = await infoAll()
         if (name) {
-            let juegosName = juegos.find(e => e.name.toLowerCase().includes(name.toLowerCase())).slice(0, 15)
-            if (juegosName.length) res.send(juegosName)
+            let juegosName = juegos.find((e) => e.name.toUpperCase().includes(name.toUpperCase()))
+            if (juegosName) res.send(juegosName)
 
             else res.status(404).send('El Video Juego no existe')
 
@@ -34,9 +33,6 @@ router.get('/', async (req, res, next) => {
 
 router.get('/platforms', async (req, res, next) => {
     let juegos = await infoplatform()
-    // // let arrjuegos = juegos.map(e => {
-    // //     return { platforms: e.platforms }
-    // })
     res.send(juegos)
 
 })
